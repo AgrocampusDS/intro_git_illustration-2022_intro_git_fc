@@ -26,7 +26,8 @@ library(tidyverse)
 data(penguins)
 
 penguins %>%
-  ggplot() +aes(x=bill_length_mm, y=bill_depth_mm) + geom_point()
+  ggplot() +aes(x=bill_length_mm, y=bill_depth_mm) + 
+  geom_point(aes=colors)
 
 print("a")
 
